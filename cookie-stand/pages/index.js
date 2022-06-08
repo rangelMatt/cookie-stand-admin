@@ -18,9 +18,9 @@ export default function Home() {
     event.preventDefault();
     let newStore = {
       Location: event.target.Location.value,
-      minCustomers: event.target.MinimumPerHour.value,
-      maxCustomers: event.target.MaximumPerHour.value,
-      avgCookies: event.target.AverageCookiesPerHour.value,
+      minCustomers: parseInt(event.target.MinimumPerHour.value),
+      maxCustomers: parseInt(event.target.MaximumPerHour.value),
+      avgCookies: parseFloat(event.target.AverageCookiesPerHour.value),
     }
     setState(newStore);
     event.target.reset();
@@ -67,18 +67,20 @@ function CookieForm(props) {
         <div className="text-center">
           <label>Minimum Customers per Hour</label>
           <input 
-            className="flex-bottom"
+            className="flex-bottom leading-tight"
             id="MinimumPerHour"
+            type="float"
             placeholder="2" 
             required 
             />
         </div>
 
-        <div className="">
+        <div>
           <label>Maximum Customers per Hour</label>
           <input  
             className="flex-bottom leading-tight" 
             id="MaximumPerHour"
+            type="float"
             placeholder="4" 
             required 
             />
@@ -87,7 +89,7 @@ function CookieForm(props) {
         <div>
           <label>Average Cookies per Sale</label>
           <input 
-            className="flex-bottom"
+            className="flex-bottom leading-tight"
             id="AverageCookiesPerHour"
             type="float"
             placeholder="2.5" 

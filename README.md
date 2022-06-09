@@ -1,4 +1,4 @@
-# Lab - Class 37
+# Lab - Class 37/38
 
 ## Project:  Welcome to React, Next.js & TailwindCSS
 
@@ -8,6 +8,7 @@
 
 - Morning Lecture
 - Ben Mills
+- Nicholas Mercado
 
 ### Setup
 

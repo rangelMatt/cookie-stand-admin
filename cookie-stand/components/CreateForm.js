@@ -84,13 +84,3 @@ export default function CreateForm(props) {
 
   )
 }
-
-  // return (
-  //   < main className="flex flex-col items-center py-y pt-6 space-y-8" >
-  //     <CookieForm onSubmit={handleSubmit} />
-
-  //     <p className="text-sm text-gray-500">Report Table Coming Soon...</p>
-
-  //     <DisplayJson storeData={props.storeData} />
-  //   </main >
-  // )
